@@ -35,16 +35,30 @@ This project was completed using the following Tools and Frameworks
 - **Version control system:** Git and Github 
 
 ### CNN - Image classification pipeline 
-- 1 Download, Import and Unzip the image dataset 
-- 2 Read the image data file directory
-- 3 Visualize the images
-- 4 Image Data Preprocessing
+
+![My Image](https://www.datanami.com/wp-content/uploads/2021/04/pipeline_shutterstock_Aurora72.jpg) 
+
+- 1 Download, Upload and Unzip the image dataset 
+The image dataset was downloaded from [KAGGLE](https://www.kaggle.com/), uploaded to my Google drive and then Unzipped with Python **ZipFile** module in Google Colaboratory.
+- **2 Read the image data file directory:** 
+I read the image data file directory with the pathlib module. 
+
+- **3 Visualize the images:** 
+Matplotlib was used to visualize the images
+- **4 Image Data Preprocessing:**
 	  a. Convert to numpy arrays 
 	  b. Normalize (scale) the arrays 
-- 5 Split the image dataset into train, validation and test data 
-- 6 Data Augmentation 
-- 7 Train the Model 
-- 8 Model Evaluation 
-- 9 Save the Model 
+- **5 Split the image dataset into train, validation and test data:** 
+Data splitting is the act of partitioning available data into three portions, usually for cross-validatory purposes. The training and validation portion of the data is used to develop a predictive model, and the test portion to evaluate the model's performance. Scikit-learn train_test_split function was used to split the data into training, validation, and testing set 
+
+- **6 Data Augmentation:** 
+Data augmentation is a process of artificially increasing the amount of data by generating new data points from existing data. This includes adding minor alterations to data like resizing, flipping, rotating, cropping, padding, etc. This process was executed with the image.preprocessing class of TensorFlow 
+
+- **7 Train the Model:** 
+A deep learning training model is a process in which a deep learning algorithm is fed with sufficient training data to learn from. The model was train sequentially stacking layers of Neural Networks where each layer has exactly one input tensor and one output tensor. 
+
+- **8 Model Evaluation:** The process of using different evaluation metrics to understand a deep learning model's performance, as well as its strengths and weaknesses. Model evaluation is important to assess the efficacy of a model during initial research phases, and it also plays a role in model monitoring
+
+- **9 Save the Model:** Saving the  model architecture, learned weights to permits their reusage in the future or in production.
 
 
