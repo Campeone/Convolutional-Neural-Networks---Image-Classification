@@ -32,4 +32,19 @@ This project was completed using the following Tools and Frameworks
 - **Deep Learning Implementation Framework:** Scikit-Learn, TensorFlow, Keras 
 - **Data Visualization:** Matplotlib, Seaborn. 
 - **Integrated Development Environment:** Google colaboratory
-Version control system: Git and Github
+- **Version control system:** Git and Github 
+
+### CNN - Image classification pipeline 
+- 1 Download, Import and Unzip the image dataset 
+- 2 Read the image data file directory
+- 3 Visualize the images
+- 4 Image Data Preprocessing
+	  a. Convert to numpy arrays 
+	  b. Normalize (scale) the arrays 
+- 5 Split the image dataset into train, validation and test data 
+- 6 Data Augmentation 
+- 7 Train the Model 
+- 8 Model Evaluation 
+- 9 Save the Model 
+
+
